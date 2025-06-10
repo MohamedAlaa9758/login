@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav id="navBar" class="navbar navbar-expand-lg shadow-lg d-none ">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+            <button class="navbar-toggler border border-1 " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fa-solid fa-bars text-white-50 "></span>
+            </button>
+            <div class="navbar-collapse " id="navbarSupportedContent">
+                <button id="logOut" class="btn btn-outline-warning ms-auto text-white-50">Logout</button>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start welcome section -->
+    <section id="sayHello" class="my-5 py-5 d-none">
+        <div
+            class="container my-5 py-5 h-100 d-flex justify-content-center align-items-center text-center text-capitalize">
+            <div id="cardParg" class="card-parg my-5 p-5 w-75 mx-auto">
+            </div>
+        </div>
+    </section>
+    <!-- end welcome section -->
+
+    <!-- start signUp section -->
+    <section id="signUp" class=" py-5 d-none">
+        <div class="container text-center text-capitalize">
+            <div class="card-parg p-5 w-75 mx-auto">
+                <h1>Smart Login System</h1>
+                <input id="signupName" class="form-control custom-input bg-transparent text-white my-4 shadow-none"
+                    type="text" placeholder="Enter Your Name">
+                <input id="signupEmail" class="form-control custom-input bg-transparent text-white my-4 shadow-none "
+                    type="email" placeholder="Enter Your Email">
+                <input id="signupPass" class="form-control custom-input bg-transparent text-white my-4 shadow-none "
+                    type="password" placeholder="Enter Your Password">
+                <p id="erro" class="text-danger d-none">All inputs is required</p>
+                <p id="success" class="text-success d-none">Success</p>
+                <button class="btn btn-outline-info w-100 signupBtn">Sign Up</button>
+                <p class="my-4 text-white">You have an account?<span><a id="signupPage"
+                            class="text-decoration-none text-white" href="#">Signin</a></span></p>
+            </div>
+        </div>
+    </section>
+    <!-- end signUp section -->
+
+    <!-- start signIn section -->
+    <section id="signIn" class=" py-5">
+        <div class="container text-center text-capitalize">
+            <div class="card-parg p-5 w-75 mx-auto">
+                <h1>Smart Login System</h1>
+                <input id="loginEmail" class="form-control custom-input bg-transparent text-white my-4 shadow-none "
+                    type="email" placeholder="Enter Your Email">
+                <input id="loginPass" class="form-control custom-input bg-transparent text-white my-4 shadow-none "
+                    type="password" placeholder="Enter Your Password">
+                <p id="erroLogin" class="text-danger d-none">All inputs is required</p>
+                <!-- <p id="success" class="text-success d-none">Success</p> -->
+                <button class="btn btn-outline-info w-100 loginBtn">LOGIN</button>
+                <p class="my-4 text-white">Don’t have an account? <span><a id="loginPage"
+                            class="text-decoration-none text-white" href="#">Sign Up</a></span></p>
+            </div>
+        </div>
+    </section>
+    <!-- end signIn section -->
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

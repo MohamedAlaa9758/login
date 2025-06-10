@@ -1,0 +1,25 @@
+
+:root{
+    --clr:#24353F;
+    
+}
+.custom-input::placeholder {
+  color: #ffffff93;
+}
+body{
+    background-color: var(--clr);
+}
+.navbar{
+    background-color: var(--clr);
+}
+.card-parg{
+    background-color: var(--clr);
+    box-shadow: 0px 0px 50px #000 ;
+    color: #17A2B8;
+}
+a{
+    transition: all 0.5s;
+}
+a:hover{
+    text-decoration: underline !important;
+}
