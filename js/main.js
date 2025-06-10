@@ -56,6 +56,8 @@ var loginBtn = document.querySelector('.loginBtn');
 loginBtn.addEventListener('click', function (e) {
     if (loginEmailInput.value === '' || loginPassInput.value === '') {
         document.getElementById('erroLogin').classList.remove('d-none');
+    } else {
+        document.getElementById('erroLogin').classList.remove('d-none');
     }
 
     for (var i = 0; i < chekUser.length; i++) {
